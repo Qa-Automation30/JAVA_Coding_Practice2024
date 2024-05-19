@@ -1,8 +1,10 @@
 package geeksForGeeks.stringsProblems;
 
+import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Map;
 import java.util.Set;
-// still need to solve
+// Solved by me only
 public class RemoveCommonCharactersAndConcatenate {
     /**
      * Given two strings s1 and s2. Modify both the strings such that all the common characters
@@ -31,22 +33,27 @@ public class RemoveCommonCharactersAndConcatenate {
      *
      */
     public static void main(String[] args) {
-        String s1 ="aacdb";
-        String s2 = "gafd";
+        String s1 ="abcs";
+        String s2 = "cxzca";
         removeCommonCharactersAndConcatenate(s1,s2);
     }
 
     static void removeCommonCharactersAndConcatenate(String s1, String s2){
-        Set<Character> set1 = new HashSet<>();
-        Set<Character> set2 = new HashSet<>();
-        for (int i=0;i<s1.length();i++){
-            set1.add(s1.charAt(i));
+        String newStr  =  s1+s2;
+        HashMap<Character,Integer> map = new HashMap<>();
+        for(int i=0;i<newStr.length();i++){
+         if(!map.containsKey(newStr.charAt(i))){
+             map.put(newStr.charAt(i),1);
+         }
+         else {
+             map.put(newStr.charAt(i),(map.get(newStr.charAt(i))+1));
+         }
         }
-        for (int i=0;i<s2.length();i++){
-            set2.add(s2.charAt(i));
+       Set<Map.Entry<Character,Integer>> set =  map.entrySet();
+        for(Map.Entry<Character,Integer> kv :set){
+            if(kv.getValue()==1){
+                System.out.println(kv.getKey());
+            }
         }
-        System.out.println(set1);
-        System.out.println(set2);
-
     }
 }

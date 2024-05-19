@@ -14,3 +14,9 @@ public class Fourth {
 //        }
 //    }
 }
+/**
+ * In the given code, you're attempting to override the m1() method from the parent class P1 in the child class C1.
+ * However, the m1() method in the parent class P1 is declared as public,
+ * but in the child class C1, you're attempting to override it with a method that has a more restrictive access modifier, protected.
+ * This is not allowed because a subclass cannot reduce the visibility of the inherited method.
+ */

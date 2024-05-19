@@ -2,6 +2,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CountNumOfChar_UsingList {
+    /**
+     * This is the first way to do this , you can do it via hashMap as well
+     * @param args
+     */
     public static void main(String[] args) {
         String str ="This is my string and I need to count the occurrence of character";
         List<Character> chList = new ArrayList<>();

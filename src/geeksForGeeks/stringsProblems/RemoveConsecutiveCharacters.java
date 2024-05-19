@@ -1,5 +1,5 @@
 package geeksForGeeks.stringsProblems;
-
+// This is not solved by me multiple times
 public class RemoveConsecutiveCharacters {
     /**
      * S = aabb

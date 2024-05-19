@@ -1,5 +1,11 @@
 package LeetCode;
 
+
+
+// https://leetcode.com/studyplan/top-interview-150/
+// https://leetcode.com/problemset/?difficulty=EASY&page=1
+
+
 import java.sql.Array;
 import java.util.Arrays;
 
@@ -23,12 +29,9 @@ public class TwoSum {
                     if(arr[i]+arr[j]==target){
                         return new int[]{i,j};
                     }
-                    else {
-                        return new int[0];
-                    }
                 }
             }
         }
-        return arr;
+        return new int[0];
     }
 }

@@ -2,20 +2,6 @@ package EpamQuestions;
 
 public class First {
 
-    //1-> He asked that finally block will run or not.
-    public static void main(String[] args) {
-        System.out.println(10/0);
-        try {
-            System.out.println("try block");
-        }
-        catch (Exception e){
-            e.printStackTrace();
-        }
-        finally {
-            System.out.println("This is finally block");
-        }
-    }
-
     // 2-> Post and Pre increment se related questions [a++,++b]
     // leader walla question tha you need to write it down logic
     /**

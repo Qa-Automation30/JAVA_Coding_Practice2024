@@ -5,6 +5,9 @@ import java.util.Iterator;
 import java.util.Map;
 import java.util.Set;
 
+/**
+ *  Get those words whose count is grater then 1
+ */
 public class CountNoOfWords {
     public static void main(String[] args) {
         String str = "This is my java string and java is a good language";

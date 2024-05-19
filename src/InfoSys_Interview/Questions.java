@@ -6,7 +6,7 @@ public class Questions {
         String str = "Viv#$e!*^^k";
         // op -> Vivek
 
-        String str1 = str.replaceAll("[^A-za-z]", "");
+        String str1 = str.replaceAll("[^A-Za-z]", "");
         System.out.println(str1);
 
         // 2nd coding question
@@ -37,6 +37,28 @@ public class Questions {
 // what interface you used in your framework while using selenium
 // what is encapsulation and how you used in your selenium framework
 // what kind of collections you have used in your framework
-// Suppose there are 8 tabs are opened, and you need to navigate on 6th one need to verify the title of the page and then close it
+/** Suppose there are 8 tabs are opened, and you need to navigate on 6th one need to verify the title of the page and then close it
+ * https://www.youtube.com/watch?v=7xh371gk2ho
+ */
 // suppose there are one text box, and you are clearing the text from it, it is cleared from the UI but still present in DB, how to handle it
 // Why you need to use JavaScript executor , when you have waits in selenium, what is the idea behind it, is there any specific reason?
+
+/**
+ *  Git pull --> automatically merges the fetched changes into the current branch
+ *  Git fetch --> it just pull all the branches and does not merge the code
+ */
+//========================================
+/**
+ *   what interface you used in your framework while using selenium  -->
+ *
+ *   the core interface you'll interact with in most Selenium frameworks is the WebDriver interface.
+ *
+ *   While WebDriver is the main interface for interacting with the browser,
+ *   Selenium also has other interfaces that provide specific functionalities. Some examples include:
+ *
+ * SearchContext: Provides methods for finding elements on a web page.
+ * TakesScreenshot: Allows capturing screenshots of the browser window.
+ * JavascriptExecutor: Enables executing JavaScript code within the browser.
+ *
+ *
+ */

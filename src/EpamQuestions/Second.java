@@ -2,8 +2,10 @@ package EpamQuestions;
 
 // Asked this code in Epam :
 //How to call both constructor at once?
+// This is the concept of constructor chaining he was asking about.
 public class Second {
     Second(){
+        this("123");
         System.out.println("Test");
 
     }

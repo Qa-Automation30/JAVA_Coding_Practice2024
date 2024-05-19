@@ -14,7 +14,11 @@ public class BoldinterviewQuestion {
         }
         else{
             for(int i=0;i<len;i++){
-                getAllPermutation(prefix+str.charAt(i),str.substring(0,i)+str.substring(i+1,len));
+                String str1 =  prefix+str.charAt(i);
+                String str2 =  str.substring(0,i);
+                String str3 =  str.substring(i+1,len);
+               // getAllPermutation(prefix+str.charAt(i),str.substring(0,i)+str.substring(i+1,len));
+                getAllPermutation(str1,str2+str3);
             }
         }
    }

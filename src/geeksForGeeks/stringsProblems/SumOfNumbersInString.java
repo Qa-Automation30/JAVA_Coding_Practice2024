@@ -1,7 +1,7 @@
 package geeksForGeeks.stringsProblems;
 
 import java.util.Objects;
-
+// Solved by me without help
 public class SumOfNumbersInString {
     /**
      * Given a string str containing alphanumeric characters. The task is to calculate the sum of all the numbers present in the string.

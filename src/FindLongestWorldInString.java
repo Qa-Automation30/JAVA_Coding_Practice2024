@@ -12,7 +12,6 @@ public class FindLongestWorldInString {
             length = arr[i].length();
             map.put(length,arr[i]);
         }
-        System.out.println(map);
         int maxValue = Collections.max(map.keySet());
         System.out.println(maxValue);
         System.out.println(map.get(maxValue));
